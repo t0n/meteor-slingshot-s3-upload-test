@@ -1,0 +1,46 @@
+<template name="imageUploader">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <span style="font-size:15px; margin-left:10px;">
+                    <div class="form-group">
+                      <label for="selectFile">Select</label>
+                      <input type="file" class="uploadFile" id="uploadFile">
+                      <p class="help-block">Upload image here.</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0"
+                               aria-valuemax="100" style="width: {{progress}}%;">
+                            <span class="sr-only">{{progress}}% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </span>
+
+                <div>
+                    {{isUploading}}
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div>
+                    <strong>Uploaded image:</strong>
+                </div>
+                <div>
+                    <img class="uploaded-image" src="{{uploaded_image.url}}"/>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</template>

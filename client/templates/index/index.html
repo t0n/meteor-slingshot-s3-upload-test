@@ -1,0 +1,17 @@
+<template name="index">
+    <div class="container-fluid">
+
+        <h1>Images</h1>
+
+        <hr/>
+
+        {{> imageUploader }}
+
+        <div class="row">
+            {{#each images}}
+                {{> images_list_item}}
+            {{/each}}
+        </div>
+
+    </div>
+</template>

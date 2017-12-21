@@ -1,0 +1,6 @@
+{
+  "AWSAccessKeyId": "<Paste Your Access Key ID Here>",
+  "AWSSecretAccessKey": "<Paste Your Secret Access Key Here>",
+  "S3BucketName": "<Your Bucket's URL>",
+  "S3Region": "<Your Bucket's Amazon Region>"
+}
